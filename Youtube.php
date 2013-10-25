@@ -55,7 +55,7 @@ class Youtube{
 	 * @param string The video id
 	 * @return array The download links
 	 */ 
-	function getVideoLinks($id){
+	function getDownloadLinks($id){
 		$content = $this->getPageContent($id);
 		$videos = array('MP4' => array(), 'FLV' => array(), '3GP' => array(), 'WEBM' => array());
 		
